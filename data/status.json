@@ -1,10 +1,13 @@
 {
-  "run_at": "2026-11-13T15:05:06+07:00",
+  "run_at": "2026-11-13T15:27:22+07:00",
   "sources": {
     "DOJI": {
       "ok": true
     },
     "Bảo Tín Mạnh Hải": {
+      "ok": true
+    },
+    "PNJ": {
       "ok": true
     }
   }
