@@ -33,6 +33,14 @@ SOURCES = [
             ("Nhẫn tròn 9999 Hưng Thịnh Vượng", ["nhantron9999hungthinhvuong", "hungthinhvuong"]),
         ],
     },
+    {
+        "brand": "Bảo Tín Mạnh Hải",
+        "url": "https://baotinmanhhai.vn/bang-gia-vang",
+        "products": [
+            ("Vàng miếng SJC", ["vangmiengsjc"]),
+            ("Kim Gia Bảo 24K", ["kimgiabao24k"]),
+        ],
+    },
     # Trang btmc.vn không phản hồi máy chủ GitHub (chặn truy cập tự động) nên tạm tắt.
     # Muốn bật lại: bỏ dấu # ở đầu các dòng bên dưới.
     # {
