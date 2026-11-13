@@ -1,12 +1,11 @@
 {
-  "run_at": "2026-11-13T14:56:23+07:00",
+  "run_at": "2026-11-13T15:05:06+07:00",
   "sources": {
     "DOJI": {
       "ok": true
     },
     "Bảo Tín Mạnh Hải": {
-      "ok": false,
-      "error": "Không tìm thấy dòng: Vàng miếng SJC, Kim Gia Bảo 24K (đọc được 61 dòng)"
+      "ok": true
     }
   }
 }
