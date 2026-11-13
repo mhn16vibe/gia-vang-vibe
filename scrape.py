@@ -129,6 +129,7 @@ def append_rows(new_rows):
 def main():
     from playwright.sync_api import sync_playwright
 
+    DATA.mkdir(exist_ok=True)
     now = datetime.now(TZ)
     status = {"run_at": now.isoformat(timespec="seconds"), "sources": {}}
     new_rows, failures = [], 0
@@ -171,8 +172,9 @@ def main():
 
     if new_rows:
         append_rows(new_rows)
+    print(json.dumps(status, ensure_ascii=False, indent=2), flush=True)
+    DATA.mkdir(parents=True, exist_ok=True)
     STATUS_PATH.write_text(json.dumps(status, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps(status, ensure_ascii=False, indent=2))
     return 1 if failures else 0
 
 
