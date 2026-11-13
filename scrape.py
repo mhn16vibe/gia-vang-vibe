@@ -41,6 +41,14 @@ SOURCES = [
             ("Kim Gia Bảo 24K", ["kimgiabao24k"]),
         ],
     },
+    {
+        "brand": "PNJ",
+        "url": "https://www.pnj.com.vn/site/gia-vang",
+        "products": [
+            ("Vàng miếng SJC 999.9", ["vangmiengsjc"]),
+            ("Nhẫn trơn PNJ 999.9", ["nhantronpnj"]),
+        ],
+    },
     # Trang btmc.vn không phản hồi máy chủ GitHub (chặn truy cập tự động) nên tạm tắt.
     # Muốn bật lại: bỏ dấu # ở đầu các dòng bên dưới.
     # {
@@ -78,7 +86,7 @@ def parse_number(cell: str):
 
 def to_vnd_per_luong(value: float):
     """Đưa về đồng/lượng. Trang hiển thị lúc triệu, lúc nghìn đồng/chỉ..."""
-    for mult in (1, 1e3, 1e4, 1e6):
+    for mult in (1, 10, 100, 1e3, 1e4, 1e5, 1e6):  # khoảng giá hẹp nên chỉ 1 hệ số khớp
         v = value * mult
         if MIN_VND <= v <= MAX_VND:
             return round(v)
