@@ -1,13 +1,8 @@
 {
-  "run_at": "2026-11-13T14:19:43+07:00",
+  "run_at": "2026-11-13T14:27:22+07:00",
   "sources": {
-    "SJC": {
-      "ok": false,
-      "error": "Không tìm thấy dòng: Vàng miếng SJC 1L, 10L, 1KG (đọc được 0 dòng)"
-    },
     "DOJI": {
-      "ok": false,
-      "error": "Không tìm thấy dòng: SJC - Bán lẻ (đọc được 42 dòng)"
+      "ok": true
     },
     "Bảo Tín Minh Châu": {
       "ok": false,
