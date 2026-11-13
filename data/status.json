@@ -1,0 +1,17 @@
+{
+  "run_at": "2026-11-13T13:58:45+07:00",
+  "sources": {
+    "SJC": {
+      "ok": false,
+      "error": "Không tìm thấy dòng: Vàng miếng SJC 1L, 10L, 1KG (đọc được 0 dòng)"
+    },
+    "DOJI": {
+      "ok": false,
+      "error": "Không tìm thấy dòng: SJC - Bán lẻ (đọc được 19 dòng)"
+    },
+    "Bảo Tín Minh Châu": {
+      "ok": false,
+      "error": "TimeoutError: Page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://btmc.vn/gia-vang-theo-ngay.html\", waiting until \"networkidle\"\n"
+    }
+  }
+}
