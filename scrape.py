@@ -23,15 +23,15 @@ FIELDS = ["timestamp", "date", "brand", "product", "buy", "sell"]
 # Mẫu đã bỏ dấu, bỏ khoảng trắng, viết thường. Thử lần lượt từng mẫu.
 # Nếu sau lần chạy đầu tiên chọn sai dòng, chỉ cần sửa các mẫu này.
 SOURCES = [
-    {
-        "brand": "SJC",
-        "url": "https://sjc.com.vn/gia-vang-online",
-        "products": [("Vàng miếng SJC 1L, 10L, 1KG", ["vangsjc1l", "sjc1l"])],
-    },
+    # Trang sjc.com.vn chặn truy cập tự động (Cloudflare) nên tạm tắt.
+    # Giá vàng miếng SJC vẫn có trong bảng của DOJI và Bảo Tín Minh Châu.
     {
         "brand": "DOJI",
         "url": "https://banggia.doji.vn/gold-price",
-        "products": [("SJC - Bán lẻ", ["sjcbanle", "sjcbanl"])],
+        "products": [
+            ("Vàng miếng SJC", ["vangmiengsjc"]),
+            ("Nhẫn tròn 9999 Hưng Thịnh Vượng", ["nhantron9999hungthinhvuong", "hungthinhvuong"]),
+        ],
     },
     {
         "brand": "Bảo Tín Minh Châu",
@@ -184,6 +184,11 @@ def main():
                 else:
                     status["sources"][brand] = {"ok": True}
             except Exception as e:  # noqa: BLE001
+                try:  # vẫn ghi lại những gì trang hiển thị để dò lỗi
+                    text = page.evaluate("() => document.body ? document.body.innerText : ''")
+                    (DATA / f"debug_{norm(brand)}.txt").write_text("LOI: " + str(e)[:300] + "\n\n" + text[:20000], encoding="utf-8")
+                except Exception:  # noqa: BLE001
+                    pass
                 failures += 1
                 status["sources"][brand] = {"ok": False, "error": f"{type(e).__name__}: {str(e)[:200]}"}
             finally:
