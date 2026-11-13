@@ -105,15 +105,36 @@ EXTRACT_JS = """
 """
 
 
-def fetch_rows(page, url):
-    page.goto(url, wait_until="networkidle", timeout=90000)
-    page.wait_for_timeout(4000)
-    rows = page.evaluate(EXTRACT_JS)
-    if not rows:  # trang không dùng bảng: lấy từng dòng chữ
-        text = page.evaluate("() => document.body.innerText")
-        rows = [re.split(r"\s{2,}|\t", ln.strip()) for ln in text.splitlines() if ln.strip()]
-        rows = [r for r in rows if len(r) >= 2]
+PRICE_TOKEN = re.compile(r"(?<![\w.,▲▼+\-])(\d{1,3}(?:[.,]\d{3})+|\d+(?:[.,]\d+)?)(?![\d.,]*\s*[KkMm%])")
+
+
+def text_rows(text):
+    """Biến mỗi dòng chữ trên trang thành [tên, số, số...] để dò giá."""
+    rows = []
+    for line in text.splitlines():
+        line = re.sub(r"\s+", " ", line).strip()
+        if not line:
+            continue
+        nums = PRICE_TOKEN.findall(line)
+        if nums:
+            rows.append(["T: " + line] + nums)
     return rows
+
+
+def fetch_rows(page, url):
+    """Trả về (các dòng để dò giá, nội dung để ghi vào tệp debug)."""
+    page.goto(url, wait_until="domcontentloaded", timeout=60000)
+    try:
+        page.wait_for_load_state("networkidle", timeout=20000)
+    except Exception:  # noqa: BLE001  trang có kết nối chạy liên tục
+        pass
+    page.wait_for_timeout(5000)
+    table = page.evaluate(EXTRACT_JS)
+    text = page.evaluate("() => document.body ? document.body.innerText : ''")
+    rows = table + text_rows(text)
+    dump = ("=== BANG (" + str(len(table)) + " dong) ===\n" + "\n".join(" | ".join(r) for r in table)
+            + "\n\n=== CHU TREN TRANG ===\n" + "\n".join(text.splitlines()[:400]))
+    return rows, dump
 
 
 def append_rows(new_rows):
@@ -141,8 +162,7 @@ def main():
             brand = src["brand"]
             page = context.new_page()
             try:
-                rows = fetch_rows(page, src["url"])
-                dump = "\n".join(" | ".join(r) for r in rows)
+                rows, dump = fetch_rows(page, src["url"])
                 (DATA / f"debug_{norm(brand)}.txt").write_text(dump, encoding="utf-8")
                 found, missing = 0, []
                 for product, patterns in src["products"]:
