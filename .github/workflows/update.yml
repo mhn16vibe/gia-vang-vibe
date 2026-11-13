@@ -22,9 +22,7 @@ jobs:
           pip install playwright
           playwright install --with-deps chromium
       - name: Lay gia vang
-        run: 
-            mkdir -p data
-             python scrape.py
+        run: python scrape.py
       - name: Luu ket qua
         if: always()
         run: |
