@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giá vàng hôm nay</title>
+<style>
+  :root { --bg:#faf8f3; --card:#fff; --ink:#1f1d18; --mute:#6b665a; --line:#e7e2d4; --up:#0b7a3b; --down:#b42318; --gold:#b8860b; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#17150f; --card:#201d15; --ink:#f1ede1; --mute:#a39d8c; --line:#37321f; --up:#4cd18a; --down:#ff8a7d; --gold:#e0b84a; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:960px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { font-size:24px; margin:0 0 4px; }
+  .sub { color:var(--mute); margin:0 0 20px; font-size:14px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  table { width:100%; border-collapse:collapse; }
+  th, td { padding:12px 14px; text-align:right; border-bottom:1px solid var(--line); white-space:nowrap; }
+  th:first-child, td:first-child { text-align:left; white-space:normal; }
+  th { font-size:12px; text-transform:uppercase; letter-spacing:.04em; color:var(--mute); font-weight:600; }
+  tr:last-child td { border-bottom:0; }
+  .brand { font-weight:600; }
+  .prod { color:var(--mute); font-size:13px; }
+  .num { font-variant-numeric:tabular-nums; font-weight:600; }
+  .up { color:var(--up); } .down { color:var(--down); } .flat { color:var(--mute); }
+  .small { display:block; font-size:12px; font-weight:400; }
+  .warn { margin-top:16px; padding:12px 14px; border:1px solid var(--down); border-radius:10px; font-size:14px; }
+  .foot { margin-top:16px; color:var(--mute); font-size:13px; }
+  @media (max-width:640px) { th, td { padding:10px 8px; font-size:14px; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Giá vàng hôm nay</h1>
+  <p class="sub" id="sub">Đang tải dữ liệu…</p>
+  <div class="card"><table>
+    <thead><tr><th>Loại vàng</th><th>Mua vào</th><th>Bán ra</th><th>Mua so với hôm qua</th><th>Bán so với hôm qua</th></tr></thead>
+    <tbody id="rows"><tr><td colspan="5">Đang tải…</td></tr></tbody>
+  </table></div>
+  <div id="warn"></div>
+  <p class="foot">Đơn vị: đồng/lượng. "Hôm qua" là giá cập nhật cuối cùng của ngày gần nhất trước hôm nay. Giá mang tính tham khảo, hãy đối chiếu với bảng giá chính thức khi giao dịch.</p>
+</main>
+<script>
+const vnd = n => Number(n).toLocaleString('vi-VN');
+function parseCSV(text) {
+  const rows = []; let row = [], cur = '', q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) { if (c === '"' && text[i+1] === '"') { cur += '"'; i++; } else if (c === '"') q = false; else cur += c; }
+    else if (c === '"') q = true;
+    else if (c === ',') { row.push(cur); cur = ''; }
+    else if (c === '\n') { row.push(cur); rows.push(row); row = []; cur = ''; }
+    else if (c !== '\r') cur += c;
+  }
+  if (cur || row.length) { row.push(cur); rows.push(row); }
+  const head = rows.shift() || [];
+  return rows.filter(r => r.length === head.length).map(r => Object.fromEntries(head.map((h, i) => [h, r[i]])));
+}
+function delta(now, before) {
+  if (before == null) return '<span class="flat">—</span>';
+  const d = now - before;
+  if (d === 0) return '<span class="flat">Không đổi</span>';
+  const cls = d > 0 ? 'up' : 'down', arrow = d > 0 ? '▲' : '▼';
+  return `<span class="${cls} num">${arrow} ${vnd(Math.abs(d))}</span>`;
+}
+async function load() {
+  const bust = '?t=' + Date.now();
+  let data = [], status = null;
+  try { const r = await fetch('data/prices.csv' + bust); if (r.ok) data = parseCSV(await r.text()); } catch (e) {}
+  try { const r = await fetch('data/status.json' + bust); if (r.ok) status = await r.json(); } catch (e) {}
+  const tbody = document.getElementById('rows');
+  if (!data.length) {
+    tbody.innerHTML = '<tr><td colspan="5">Chưa có dữ liệu. Hãy chạy tác vụ cập nhật lần đầu (xem hướng dẫn README).</td></tr>';
+    document.getElementById('sub').textContent = '';
+  } else {
+    data.sort((a, b) => a.timestamp.localeCompare(b.timestamp));
+    const keys = []; const byKey = {};
+    for (const r of data) { const k = r.brand + '|' + r.product; if (!byKey[k]) { byKey[k] = []; keys.push(k); } byKey[k].push(r); }
+    const latestAll = data[data.length - 1];
+    let html = '';
+    for (const k of keys) {
+      const list = byKey[k], last = list[list.length - 1];
+      const prev = list.filter(r => r.date < last.date).pop();
+      const buy = +last.buy, sell = +last.sell;
+      html += `<tr><td><span class="brand">${last.brand}</span><span class="prod small">${last.product} · ${last.timestamp.slice(11,16)} ${last.date.split('-').reverse().join('/')}</span></td>
+        <td class="num">${vnd(buy)}</td><td class="num">${vnd(sell)}</td>
+        <td>${delta(buy, prev ? +prev.buy : null)}</td><td>${delta(sell, prev ? +prev.sell : null)}</td></tr>`;
+    }
+    tbody.innerHTML = html;
+    document.getElementById('sub').textContent = 'Cập nhật gần nhất: ' + latestAll.timestamp.slice(11,16) + ' ngày ' + latestAll.date.split('-').reverse().join('/') + ' (cập nhật lúc 9h và 15h30 mỗi ngày)';
+  }
+  if (status) {
+    const bad = Object.entries(status.sources || {}).filter(([, v]) => !v.ok || v.error);
+    if (bad.length) document.getElementById('warn').innerHTML = '<div class="warn"><b>Lần cập nhật gần nhất có lỗi:</b><br>' + bad.map(([b, v]) => b + ': ' + (v.error || 'lỗi')).join('<br>') + '</div>';
+  }
+}
+load();
+</script>
+</body>
+</html>
