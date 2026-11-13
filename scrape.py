@@ -128,6 +128,20 @@ def text_rows(text):
         nums = PRICE_TOKEN.findall(line)
         if nums:
             rows.append(["T: " + line] + nums)
+    # Trang hiển thị dạng lưới: tên và từng con số nằm trên các dòng riêng.
+    # Ghép mỗi dòng có chữ với các con số của tối đa 5 dòng ngay sau nó.
+    lines = [re.sub(r"\s+", " ", ln).strip() for ln in text.splitlines()]
+    lines = [ln for ln in lines if ln]
+    for i, line in enumerate(lines):
+        if not re.search(r"[^\W\d_]", line):
+            continue
+        nums = []
+        for nxt in lines[i + 1:i + 6]:
+            if re.search(r"[^\W\d_]{3,}", nxt):  # gặp tên sản phẩm khác thì dừng
+                break
+            nums += PRICE_TOKEN.findall(nxt)
+        if nums:
+            rows.append(["W: " + line] + nums)
     return rows
 
 
