@@ -28,7 +28,8 @@ jobs:
         run: |
           git config user.name "gold-bot"
           git config user.email "gold-bot@users.noreply.github.com"
-          git add data
+          mkdir -p data
+          git add -A data
           git diff --cached --quiet || git commit -m "Cap nhat gia vang $(TZ=Asia/Ho_Chi_Minh date '+%Y-%m-%d %H:%M')"
           git pull --rebase
           git push
