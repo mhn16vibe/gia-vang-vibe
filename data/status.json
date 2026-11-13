@@ -1,5 +1,5 @@
 {
-  "run_at": "2026-11-13T13:58:45+07:00",
+  "run_at": "2026-11-13T14:19:43+07:00",
   "sources": {
     "SJC": {
       "ok": false,
@@ -7,11 +7,11 @@
     },
     "DOJI": {
       "ok": false,
-      "error": "Không tìm thấy dòng: SJC - Bán lẻ (đọc được 19 dòng)"
+      "error": "Không tìm thấy dòng: SJC - Bán lẻ (đọc được 42 dòng)"
     },
     "Bảo Tín Minh Châu": {
       "ok": false,
-      "error": "TimeoutError: Page.goto: Timeout 90000ms exceeded.\nCall log:\n  - navigating to \"https://btmc.vn/gia-vang-theo-ngay.html\", waiting until \"networkidle\"\n"
+      "error": "TimeoutError: Page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://btmc.vn/gia-vang-theo-ngay.html\", waiting until \"domcontentloaded\"\n"
     }
   }
 }
