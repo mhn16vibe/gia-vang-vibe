@@ -33,14 +33,16 @@ SOURCES = [
             ("Nhẫn tròn 9999 Hưng Thịnh Vượng", ["nhantron9999hungthinhvuong", "hungthinhvuong"]),
         ],
     },
-    {
-        "brand": "Bảo Tín Minh Châu",
-        "url": "https://btmc.vn/gia-vang-theo-ngay.html",
-        "products": [
-            ("Vàng miếng SJC", ["vangmiengsjc"]),
-            ("Vàng miếng Rồng Thăng Long", ["vangmiengvrtl", "rongthanglong"]),
-        ],
-    },
+    # Trang btmc.vn không phản hồi máy chủ GitHub (chặn truy cập tự động) nên tạm tắt.
+    # Muốn bật lại: bỏ dấu # ở đầu các dòng bên dưới.
+    # {
+    #     "brand": "Bảo Tín Minh Châu",
+    #     "url": "https://btmc.vn/gia-vang-theo-ngay.html",
+    #     "products": [
+    #         ("Vàng miếng SJC", ["vangmiengsjc"]),
+    #         ("Vàng miếng Rồng Thăng Long", ["vangmiengvrtl", "rongthanglong"]),
+    #     ],
+    # },
 ]
 
 # Cận dưới 100 triệu để không nhầm cột "hàm lượng 99.99" với giá. Nếu giá vàng xuống dưới mức này, hạ số này xuống.
