@@ -1,10 +1,10 @@
 === BANG (13 dong) ===
-Kim Gia Bảo Gift 24K | 99.99 | -70.000 | 
-Kim Gia Bảo 24K | 99.99 | -70.000 | 
-Tiểu Kim Cát 24K | 99.99 | -7.000 | 
+Kim Gia Bảo Gift 24K | 99.99 | -20.000 | 
+Kim Gia Bảo 24K | 99.99 | -20.000 | 
+Tiểu Kim Cát 24K | 99.99 | -2.000 | 
 Trang sức - Nhẫn tròn BTMH | 99.99 |  | 
-Vàng trang sức 24K (999.9) | 99.99 | -70.000 | 
-Vàng trang sức 24K 999 | 99.9 | -70.000 | 
+Vàng trang sức 24K (999.9) | 99.99 | -20.000 | 
+Vàng trang sức 24K 999 | 99.9 | -20.000 | 
 Vàng nguyên liệu (999.9) | 99.99 |  | 
 Vàng nguyên liệu (999) | 99.9 |  | 
 Vàng miếng SJC (Cty CP BTMH) | 99.99 | -100.000 | 
@@ -42,47 +42,47 @@ Biến động (VNĐ)
 Biểu đồ
 Kim Gia Bảo Gift 24K
 99.99
-13.900
-14.300
--70.000
+13.880
+14.280
+-20.000
 Kim Gia Bảo 24K
 99.99
-13.400
-13.800
--70.000
+13.380
+13.780
+-20.000
 Tiểu Kim Cát 24K
 99.99
-1.340
-1.380
--7.000
+1.338
+1.378
+-2.000
 Trang sức - Nhẫn tròn BTMH
 99.99
-13.300
+13.280
  
 Vàng trang sức 24K (999.9)
 99.99
-13.200
-13.700
--70.000
+13.180
+13.680
+-20.000
 Vàng trang sức 24K 999
 99.9
-13.190
-13.690
--70.000
+13.170
+13.670
+-20.000
 Vàng nguyên liệu (999.9)
 99.99
-12.580
+12.590
  
 Vàng nguyên liệu (999)
 99.9
-12.530
+12.500
  
 Vàng miếng SJC (Cty CP BTMH)
 99.99
 13.500
 13.800
 -100.000
-(Cập nhật lúc 2026-11-14 09:28:24.677)
+(Cập nhật lúc 2026-11-14 15:53:22.607)
 Đơn vị tính (ĐVT): chỉ
 Trực tiếp
 Giá bạc hôm nay
