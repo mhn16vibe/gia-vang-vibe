@@ -8,9 +8,9 @@ Vàng trang sức 24K 999 | 99.9 | -70.000 |
 Vàng nguyên liệu (999.9) | 99.99 |  | 
 Vàng nguyên liệu (999) | 99.9 |  | 
 Vàng miếng SJC (Cty CP BTMH) | 99.99 | -100.000 | 
-Ngân Gia Bảo - Tứ Quý (ĐVT: lượng) | 99.9 | -26.000 | 
-Ngân Gia Bảo - Bạc thỏi 5 lượng, 10 lượng (ĐVT: lượng) | 99.9 | -22.000 | 
-Bạc thỏi 1 kg (ĐVT: kg) | 99.9 | -586.000 | 
+Ngân Gia Bảo - Tứ Quý (ĐVT: lượng) | 99.9 | -39.000 | 
+Ngân Gia Bảo - Bạc thỏi 5 lượng, 10 lượng (ĐVT: lượng) | 99.9 | -34.000 | 
+Bạc thỏi 1 kg (ĐVT: kg) | 99.9 | -906.000 | 
 Bạc nguyên liệu (ĐVT: lượng) | 99.9 |  | 
 
 === CHU TREN TRANG ===
@@ -82,7 +82,7 @@ Vàng miếng SJC (Cty CP BTMH)
 13.500
 13.800
 -100.000
-(Cập nhật lúc 2026-11-13 16:13:09.3)
+(Cập nhật lúc 2026-11-14 09:28:24.677)
 Đơn vị tính (ĐVT): chỉ
 Trực tiếp
 Giá bạc hôm nay
@@ -98,24 +98,24 @@ Biến động (VNĐ)
 Biểu đồ
 Ngân Gia Bảo - Tứ Quý (ĐVT: lượng)
 99.9
-1.541
-1.813
--26.000
+1.530
+1.800
+-39.000
 Ngân Gia Bảo - Bạc thỏi 5 lượng, 10 lượng (ĐVT: lượng)
 99.9
-1.541
-1.589
--22.000
+1.530
+1.577
+-34.000
 Bạc thỏi 1 kg (ĐVT: kg)
 99.9
-41.094
-42.374
--586.000
+40.800
+42.054
+-906.000
 Bạc nguyên liệu (ĐVT: lượng)
 99.9
 1.400
  
-(Cập nhật lúc 2026-11-13 10:57:31.0)
+(Cập nhật lúc 2026-11-13 17:21:20.0)
 ​
 
 CÔNG TY CỔ PHẦN VÀNG BẠC ĐÁ QUÝ BẢO TÍN MẠNH HẢI
