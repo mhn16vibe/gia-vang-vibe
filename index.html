@@ -33,8 +33,8 @@
   <h1>Giá vàng hôm nay</h1>
   <p class="sub" id="sub">Đang tải dữ liệu…</p>
   <div class="card"><table>
-    <thead><tr><th>Loại vàng</th><th>Mua vào</th><th>Bán ra</th><th>Mua so với hôm qua</th><th>Bán so với hôm qua</th></tr></thead>
-    <tbody id="rows"><tr><td colspan="5">Đang tải…</td></tr></tbody>
+    <thead><tr><th>Loại vàng</th><th>Mua vào</th><th>Bán ra</th><th>Chênh lệch mua – bán</th><th>Mua so với hôm qua</th><th>Bán so với hôm qua</th></tr></thead>
+    <tbody id="rows"><tr><td colspan="6">Đang tải…</td></tr></tbody>
   </table></div>
   <div id="warn"></div>
   <p class="foot">Đơn vị: đồng/lượng. "Hôm qua" là giá cập nhật cuối cùng của ngày gần nhất trước hôm nay. Giá mang tính tham khảo, hãy đối chiếu với bảng giá chính thức khi giao dịch.</p>
@@ -69,7 +69,7 @@ async function load() {
   try { const r = await fetch('data/status.json' + bust); if (r.ok) status = await r.json(); } catch (e) {}
   const tbody = document.getElementById('rows');
   if (!data.length) {
-    tbody.innerHTML = '<tr><td colspan="5">Chưa có dữ liệu. Hãy chạy tác vụ cập nhật lần đầu (xem hướng dẫn README).</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="6">Chưa có dữ liệu. Hãy chạy tác vụ cập nhật lần đầu (xem hướng dẫn README).</td></tr>';
     document.getElementById('sub').textContent = '';
   } else {
     data.sort((a, b) => a.timestamp.localeCompare(b.timestamp));
@@ -83,6 +83,7 @@ async function load() {
       const buy = +last.buy, sell = +last.sell;
       html += `<tr><td><span class="brand">${last.brand}</span><span class="prod small">${last.product} · ${last.timestamp.slice(11,16)} ${last.date.split('-').reverse().join('/')}</span></td>
         <td class="num">${vnd(buy)}</td><td class="num">${vnd(sell)}</td>
+        <td class="num">${vnd(sell - buy)}<span class="small prod">${buy ? ((sell - buy) / buy * 100).toFixed(2).replace('.', ',') + '%' : ''}</span></td>
         <td>${delta(buy, prev ? +prev.buy : null)}</td><td>${delta(sell, prev ? +prev.sell : null)}</td></tr>`;
     }
     tbody.innerHTML = html;
