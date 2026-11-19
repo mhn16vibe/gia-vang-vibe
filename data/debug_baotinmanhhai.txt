@@ -79,10 +79,10 @@ Vàng nguyên liệu (999)
  
 Vàng miếng SJC (Cty CP BTMH)
 99.99
-13.420
-13.720
+13.370
+13.670
 -50.000
-(Cập nhật lúc 2026-11-18 16:23:07.0)
+(Cập nhật lúc 2026-11-19 08:29:58.0)
 Đơn vị tính (ĐVT): chỉ
 Trực tiếp
 Giá bạc hôm nay
