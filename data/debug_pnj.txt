@@ -5,21 +5,21 @@ Nhẫn Trơn PNJ 999.9 | 12.780 | 13.200
 Vàng Kim Bảo 999.9 | 12.780 | 13.200
 Vàng Phúc Lộc Tài 999.9 | 12.780 | 13.200
 Vàng PNJ - Phượng Hoàng | 12.780 | 13.200
-Vàng nữ trang 999.9 | 12.459 | 13.009
-Vàng nữ trang 999 | 12.446 | 12.996
-Vàng nữ trang 9920 | 12.285 | 12.905
-Vàng nữ trang 99 | 12.259 | 12.879
-Vàng 916 (22K) | 11.296 | 11.916
-Vàng 750 (18K) | 9.137 | 9.757
-Vàng 680 (16.3K) | 8.226 | 8.846
-Vàng 650 (15.6K) | 7.836 | 8.456
-Vàng 610 (14.6K) | 7.315 | 7.935
-Vàng 585 (14K) | 6.990 | 7.610
-Vàng 416 (10K) | 4.792 | 5.412
-Vàng 375 (9K) | 4.258 | 4.878
-Vàng 333 (8K) | 3.712 | 4.332
-Vàng nguyên liệu mua ngoài 99.99 (*) | 11.700 | 
-Vàng nguyên liệu mua ngoài 99 (*) | 11.508 | 
+Vàng nữ trang 999.9 | 12.404 | 12.954
+Vàng nữ trang 999 | 12.391 | 12.941
+Vàng nữ trang 9920 | 12.230 | 12.850
+Vàng nữ trang 99 | 12.204 | 12.824
+Vàng 916 (22K) | 11.246 | 11.866
+Vàng 750 (18K) | 9.096 | 9.716
+Vàng 680 (16.3K) | 8.189 | 8.809
+Vàng 650 (15.6K) | 7.800 | 8.420
+Vàng 610 (14.6K) | 7.282 | 7.902
+Vàng 585 (14K) | 6.958 | 7.578
+Vàng 416 (10K) | 4.769 | 5.389
+Vàng 375 (9K) | 4.238 | 4.858
+Vàng 333 (8K) | 3.694 | 4.314
+Vàng nguyên liệu mua ngoài 99.99 (*) | 11.400 | 
+Vàng nguyên liệu mua ngoài 99 (*) | 11.211 | 
 
 === CHU TREN TRANG ===
 Câu Chuyện PNJ
@@ -36,7 +36,7 @@ Trẻ em
 Tìm kiếm nhanh
 Giá Vàng PNJ, SJC Mới Nhất Hôm Nay
 
-Cập nhật ngày: 20/11/2026 09:47:31
+Cập nhật ngày: 20/11/2026 14:04:20
 
 Khu vực
 Hồ Chí Minh
@@ -47,21 +47,21 @@ Nhẫn Trơn PNJ 999.9	12.780	13.200
 Vàng Kim Bảo 999.9	12.780	13.200
 Vàng Phúc Lộc Tài 999.9	12.780	13.200
 Vàng PNJ - Phượng Hoàng	12.780	13.200
-Vàng nữ trang 999.9	12.459	13.009
-Vàng nữ trang 999	12.446	12.996
-Vàng nữ trang 9920	12.285	12.905
-Vàng nữ trang 99	12.259	12.879
-Vàng 916 (22K)	11.296	11.916
-Vàng 750 (18K)	9.137	9.757
-Vàng 680 (16.3K)	8.226	8.846
-Vàng 650 (15.6K)	7.836	8.456
-Vàng 610 (14.6K)	7.315	7.935
-Vàng 585 (14K)	6.990	7.610
-Vàng 416 (10K)	4.792	5.412
-Vàng 375 (9K)	4.258	4.878
-Vàng 333 (8K)	3.712	4.332
-Vàng nguyên liệu mua ngoài 99.99 (*)	11.700	
-Vàng nguyên liệu mua ngoài 99 (*)	11.508	
+Vàng nữ trang 999.9	12.404	12.954
+Vàng nữ trang 999	12.391	12.941
+Vàng nữ trang 9920	12.230	12.850
+Vàng nữ trang 99	12.204	12.824
+Vàng 916 (22K)	11.246	11.866
+Vàng 750 (18K)	9.096	9.716
+Vàng 680 (16.3K)	8.189	8.809
+Vàng 650 (15.6K)	7.800	8.420
+Vàng 610 (14.6K)	7.282	7.902
+Vàng 585 (14K)	6.958	7.578
+Vàng 416 (10K)	4.769	5.389
+Vàng 375 (9K)	4.238	4.858
+Vàng 333 (8K)	3.694	4.314
+Vàng nguyên liệu mua ngoài 99.99 (*)	11.400	
+Vàng nguyên liệu mua ngoài 99 (*)	11.211	
 (*) Áp dụng cho các trang sức ngoài PNJ. Áp dụng cho các Cửa hàng có thu mua nguyên liệu theo nhu cầu của PNJ. Giá mua vào của các tuổi vàng khác được quy đổi theo tỷ lệ từ tuổi vàng 99.99 (liên hệ tư vấn viên để được tư vấn thêm)
 © 2017 Công Ty Cổ Phần Vàng Bạc Đá Quý Phú Nhuận
 170E Phan Đăng Lưu, Phường Đức Nhuận, TP.Hồ Chí Minh
