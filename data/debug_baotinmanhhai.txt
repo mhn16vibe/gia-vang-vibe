@@ -1,16 +1,16 @@
 === BANG (13 dong) ===
-Kim Gia Bảo Gift 24K | 99.99 | -250.000 | 
-Kim Gia Bảo 24K | 99.99 | -250.000 | 
-Tiểu Kim Cát 24K | 99.99 | -25.000 | 
+Kim Gia Bảo Gift 24K | 99.99 | +150.000 | 
+Kim Gia Bảo 24K | 99.99 | +150.000 | 
+Tiểu Kim Cát 24K | 99.99 | +15.000 | 
 Trang sức - Nhẫn tròn BTMH | 99.99 |  | 
-Vàng trang sức 24K (999.9) | 99.99 | -250.000 | 
-Vàng trang sức 24K 999 | 99.9 | -250.000 | 
+Vàng trang sức 24K (999.9) | 99.99 | +150.000 | 
+Vàng trang sức 24K 999 | 99.9 | +150.000 | 
 Vàng nguyên liệu (999.9) | 99.99 |  | 
 Vàng nguyên liệu (999) | 99.9 |  | 
-Vàng miếng SJC (Cty CP BTMH) | 99.99 | -70.000 | 
-Ngân Gia Bảo - Tứ Quý (ĐVT: lượng) | 99.9 | -37.000 | 
-Ngân Gia Bảo - Bạc thỏi 5 lượng, 10 lượng (ĐVT: lượng) | 99.9 | -32.000 | 
-Bạc thỏi 1 kg (ĐVT: kg) | 99.9 | -854.000 | 
+Vàng miếng SJC (Cty CP BTMH) | 99.99 | +150.000 | 
+Ngân Gia Bảo - Tứ Quý (ĐVT: lượng) | 99.9 | +38.000 | 
+Ngân Gia Bảo - Bạc thỏi 5 lượng, 10 lượng (ĐVT: lượng) | 99.9 | +33.000 | 
+Bạc thỏi 1 kg (ĐVT: kg) | 99.9 | +880.000 | 
 Bạc nguyên liệu (ĐVT: lượng) | 99.9 |  | 
 
 === CHU TREN TRANG ===
@@ -42,47 +42,47 @@ Biến động (VNĐ)
 Biểu đồ
 Kim Gia Bảo Gift 24K
 99.99
-13.330
-13.830
--250.000
+13.480
+13.980
++150.000
 Kim Gia Bảo 24K
 99.99
-12.830
-13.330
--250.000
+12.980
+13.480
++150.000
 Tiểu Kim Cát 24K
 99.99
-1.283
-1.333
--25.000
+1.298
+1.348
++15.000
 Trang sức - Nhẫn tròn BTMH
 99.99
-12.780
+12.930
  
 Vàng trang sức 24K (999.9)
 99.99
-12.730
-13.230
--250.000
+12.880
+13.380
++150.000
 Vàng trang sức 24K 999
 99.9
-12.720
-13.220
--250.000
+12.870
+13.370
++150.000
 Vàng nguyên liệu (999.9)
 99.99
-11.700
+11.600
  
 Vàng nguyên liệu (999)
 99.9
-11.650
+11.550
  
 Vàng miếng SJC (Cty CP BTMH)
 99.99
-12.850
-13.350
--70.000
-(Cập nhật lúc 2026-11-22 15:45:29.0)
+13.000
+13.500
++150.000
+(Cập nhật lúc 2026-11-23 08:36:03.0)
 Đơn vị tính (ĐVT): chỉ
 Trực tiếp
 Giá bạc hôm nay
@@ -98,24 +98,24 @@ Biến động (VNĐ)
 Biểu đồ
 Ngân Gia Bảo - Tứ Quý (ĐVT: lượng)
 99.9
-1.266
-1.489
--37.000
+1.298
+1.527
++38.000
 Ngân Gia Bảo - Bạc thỏi 5 lượng, 10 lượng (ĐVT: lượng)
 99.9
-1.266
-1.305
--32.000
+1.298
+1.338
++33.000
 Bạc thỏi 1 kg (ĐVT: kg)
 99.9
-33.760
-34.800
--854.000
+34.614
+35.680
++880.000
 Bạc nguyên liệu (ĐVT: lượng)
 99.9
 1.100
  
-(Cập nhật lúc 2026-11-21 08:32:19.0)
+(Cập nhật lúc 2026-11-23 08:34:45.0)
 ​
 
 CÔNG TY CỔ PHẦN VÀNG BẠC ĐÁ QUÝ BẢO TÍN MẠNH HẢI
