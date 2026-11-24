@@ -71,18 +71,18 @@ Vàng trang sức 24K 999
 -100.000
 Vàng nguyên liệu (999.9)
 99.99
-11.850
+11.800
  
 Vàng nguyên liệu (999)
 99.9
-11.800
+11.750
  
 Vàng miếng SJC (Cty CP BTMH)
 99.99
 13.000
 13.500
 +150.000
-(Cập nhật lúc 2026-11-24 08:38:06.0)
+(Cập nhật lúc 2026-11-24 16:33:43.0)
 Đơn vị tính (ĐVT): chỉ
 Trực tiếp
 Giá bạc hôm nay

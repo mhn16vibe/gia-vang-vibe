@@ -1,11 +1,11 @@
 === BANG (19 dong) ===
 STT | SẢN PHẨM | GIÁ
-1 | VÀNG | 3,643.812
-2 | BẠC | 42.996
+1 | VÀNG | 3,620.750
+2 | BẠC | 41.940
 STT | SẢN PHẨM | MUA VÀO | BÁN RA
-1 | BẠC DOJI 99.9 - 1 LƯỢNG | 1,577 | 1,642
-2 | BẠC DOJI 99.9 - 5 LƯỢNG | 7,885 | 8,210
-3 | BẠC 999 (MIẾNG - THANH - THỎI) | 1,532 | 1,612
+1 | BẠC DOJI 99.9 - 1 LƯỢNG | 1,540 | 1,605
+2 | BẠC DOJI 99.9 - 5 LƯỢNG | 7,700 | 8,025
+3 | BẠC 999 (MIẾNG - THANH - THỎI) | 1,495 | 1,575
 STT | SẢN PHẨM | MUA VÀO | BÁN RA
 1 | VÀNG MIẾNG SJC | 13,000 | 13,500
 2 | KIM TT/AVPL | 13,000 | 13,500
@@ -26,10 +26,10 @@ Hệ thống tập đoàn
 Tin tức – Sự kiện
 Liên hệ
 BẢNG GIÁ THẾ GIỚI
-Cập nhật 09:48 ngày 24/11/2026
+Cập nhật 16:38 ngày 24/11/2026
 STT	SẢN PHẨM	GIÁ
-1	VÀNG	3,643.812
-2	BẠC	42.996
+1	VÀNG	3,620.750
+2	BẠC	41.940
 Đơn vị: USD/oz
 BIỂU ĐỒ GIÁ VÀNG
 Ngày
@@ -42,14 +42,14 @@ Tuần
 Tháng
 Năm
 BẢNG GIÁ BẠC DOJI
-Cập nhật 09:48 ngày 24/11/2026
+Cập nhật 16:38 ngày 24/11/2026
 STT	SẢN PHẨM	MUA VÀO	BÁN RA
-1	BẠC DOJI 99.9 - 1 LƯỢNG	1,577	1,642
-2	BẠC DOJI 99.9 - 5 LƯỢNG	7,885	8,210
-3	BẠC 999 (MIẾNG - THANH - THỎI)	1,532	1,612
+1	BẠC DOJI 99.9 - 1 LƯỢNG	1,540	1,605
+2	BẠC DOJI 99.9 - 5 LƯỢNG	7,700	8,025
+3	BẠC 999 (MIẾNG - THANH - THỎI)	1,495	1,575
 Đơn vị: Nghìn VND/lượng
 BẢNG GIÁ VÀNG DOJI
-Cập nhật 09:48 ngày 24/11/2026
+Cập nhật 16:38 ngày 24/11/2026
 STT	SẢN PHẨM	MUA VÀO	BÁN RA
 1	VÀNG MIẾNG SJC	13,000	13,500
 2	KIM TT/AVPL	13,000	13,500
