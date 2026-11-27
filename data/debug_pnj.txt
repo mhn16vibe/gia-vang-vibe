@@ -1,10 +1,10 @@
 === BANG (21 dong) ===
 Loại vàng | ĐVT: 1.000đ/Chỉ | Giá mua | Giá bán
-Vàng miếng SJC 999.9 | 12.950 | 13.450
-Nhẫn Trơn PNJ 999.9 | 12.700 | 13.250
-Vàng Kim Bảo 999.9 | 12.700 | 13.250
-Vàng Phúc Lộc Tài 999.9 | 12.700 | 13.250
-Vàng PNJ - Phượng Hoàng | 12.700 | 13.250
+Vàng miếng SJC 999.9 | 12.980 | 13.480
+Nhẫn Trơn PNJ 999.9 | 12.630 | 13.250
+Vàng Kim Bảo 999.9 | 12.630 | 13.250
+Vàng Phúc Lộc Tài 999.9 | 12.630 | 13.250
+Vàng PNJ - Phượng Hoàng | 12.630 | 13.250
 Vàng nữ trang 999.9 | 12.430 | 12.980
 Vàng nữ trang 999 | 12.417 | 12.967
 Vàng nữ trang 9920 | 12.256 | 12.876
@@ -36,17 +36,17 @@ Trẻ em
 Tìm kiếm nhanh
 Giá Vàng PNJ, SJC Mới Nhất Hôm Nay
 
-Cập nhật ngày: 26/11/2026 13:36:41
+Cập nhật ngày: 27/11/2026 09:11:07
 
 Khu vực
 Hồ Chí Minh
 Khu vực
 Loại vàng | ĐVT: 1.000đ/Chỉ	Giá mua	Giá bán
-Vàng miếng SJC 999.9	12.950	13.450
-Nhẫn Trơn PNJ 999.9	12.700	13.250
-Vàng Kim Bảo 999.9	12.700	13.250
-Vàng Phúc Lộc Tài 999.9	12.700	13.250
-Vàng PNJ - Phượng Hoàng	12.700	13.250
+Vàng miếng SJC 999.9	12.980	13.480
+Nhẫn Trơn PNJ 999.9	12.630	13.250
+Vàng Kim Bảo 999.9	12.630	13.250
+Vàng Phúc Lộc Tài 999.9	12.630	13.250
+Vàng PNJ - Phượng Hoàng	12.630	13.250
 Vàng nữ trang 999.9	12.430	12.980
 Vàng nữ trang 999	12.417	12.967
 Vàng nữ trang 9920	12.256	12.876
